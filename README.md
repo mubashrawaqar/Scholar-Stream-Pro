@@ -1,7 +1,7 @@
 # Scholar Stream Pro 🎓
 **AI-Driven Academic Research & Intelligent Citation Engine**
 
-[🚀 View Live Demo on Hugging Face Spaces] https://huggingface.co/spaces/mubashrawaqar123/scholar-stream-pro
+[🚀 View Live Demo on Hugging Face Spaces] (https://huggingface.co/spaces/mubashrawaqar123/scholar-stream-pro)
 
 ## 🌟 Overview
 Scholar Stream Pro is a specialized tool designed to solve the "information overload" problem in academia. Built during an intensive development sprint, this application automates the process of finding relevant research papers, synthesizing their findings using high-speed LLMs, and formatting citations instantly.
