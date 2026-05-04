@@ -20,14 +20,15 @@ from groq import Groq
 
 from google.colab import userdata
 
+import os
+
 # --- SECURITY: API KEY CONFIGURATION ---
-try:
-    # Use the userdata module for reliable secret retrieval
-    GROQ_KEY = userdata.get('scholarApi')
-    SS_API_KEY = userdata.get('scholar_api_key')
-except Exception:
-    GROQ_KEY = None
-    SS_API_KEY = None
+GROQ_KEY = os.getenv('scholarApi')
+SS_API_KEY = os.getenv('scholar_api_key')
+
+# Optional: Add a small check to warn you if keys are missing
+if not GROQ_KEY or not SS_API_KEY:
+    print("⚠️ Warning: API keys not found. Please check your environment variables.")
 
 try:
     if GROQ_KEY:
